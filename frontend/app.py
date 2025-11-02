@@ -8,6 +8,6 @@ backend_url = "https://cc2025-api.azurewebsites.net/api/data"
 try:
     response = requests.get(backend_url)
     data = response.json()
-    st.success(f"Mesaj de la backend: {data['message']}")
+    st.success(f"Mesaj de la backend  : {data['message']}")
 except Exception as e:
     st.error(f"Nu s-a putut conecta la backend: {e}")
