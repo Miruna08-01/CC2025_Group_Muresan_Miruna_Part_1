@@ -1,11 +1,10 @@
 #!/bin/bash
 echo "Starting backend app..."
 
-# Navigate to the backend folder in Azure
-cd /home/site/wwwroot
+# Already in /home/site/wwwroot, no need to cd
 echo "Current folder: $(pwd)"
 
-# Install dependencies (optional if Azure already did it)
+# Install dependencies
 pip install -r requirements.txt
 echo "Dependencies installed"
 
