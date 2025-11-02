@@ -1,14 +1,9 @@
 #!/bin/bash
 
-# verifică folderul curent
 echo "Current directory: $(pwd)"
-
-# listă fișierele din folderul curent
-echo "Files in current directory:"
+echo "Files:"
 ls -la
 
-# instalează dependențele
-pip install -r backend/requirements.txt
+pip install -r requirements.txt
 
-# pornește aplicația FastAPI
-gunicorn -w 4 -k uvicorn.workers.UvicornWorker backend.main:app --bind 0.0.0.0:$PORT
+gunicorn -w 4 -k uvicorn.workers.UvicornWorker main:app --bind 0.0.0.0:$PORT
