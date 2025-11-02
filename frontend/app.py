@@ -10,4 +10,4 @@ try:
     data = response.json()
     st.success(f"Mesaj de la backend  : {data['message']}")
 except Exception as e:
-    st.error(f"Nu s-a putut conecta la backend: {e}")
+    st.error(f"Nu s-a   putut conecta la backend: {e}")
