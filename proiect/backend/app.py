@@ -7,8 +7,8 @@ CORS(app)  # allow all origins for demo
 @app.route('/api/data', methods=['GET'])
 def get_data():
     data = [
-        {"id" : 1, "service": "Azure App Service", "category": "PaaS"},
-        {"id" : 2, "service": "GitHub Actions", "category": "CI/CD"},
+        {"id": 1, "service": "Azure App Service", "category": "PaaS"},
+        {"id": 2, "service": "GitHub Actions", "category": "CI/CD"},
         {"id": 3, "service": "Flask API", "category": "Backend"},
         {"id": 4, "service": "HTML+JS", "category": "Frontend"}
     ]
