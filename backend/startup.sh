@@ -1,6 +1,5 @@
 #!/bin/bash
 # intră în directorul backend
-cd backend
 
 # instalează dependențele (într-un virtual environment dacă vrei)
 pip install -r requirements.txt
