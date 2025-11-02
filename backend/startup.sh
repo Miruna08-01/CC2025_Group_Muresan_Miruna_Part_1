@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Current directory: $(pwd)"
+echo "Current  directory: $(pwd)"
 echo "Files:"
 ls -la
 
