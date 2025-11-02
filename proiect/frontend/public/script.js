@@ -1,4 +1,4 @@
-const API_URL = "http://127.0.0.1:5000/api/data";
+const API_URL = "const API_URL = \"https://cc2025-api.azurewebsites.net/api/data\";\n";
 
 async function loadData() {
   try {
