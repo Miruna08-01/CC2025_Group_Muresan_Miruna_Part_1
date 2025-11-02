@@ -1,7 +1,6 @@
 #!/bin/#!/bin/bash
 # intră în folderul frontend
 
-
 # instalează toate dependențele
 pip install -r requirements.txt
 
