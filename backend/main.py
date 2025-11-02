@@ -13,4 +13,4 @@ app.add_middleware(
 
 @app.get("/api/data")
 def get_data():
-    return {"message": "Have   a nice day!"}
+    return {"message":  "Have   a nice day!"}
