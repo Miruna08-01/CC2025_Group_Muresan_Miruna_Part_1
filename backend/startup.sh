@@ -1,10 +1,13 @@
 #!/bin/bash
-# Navigate to backend folder (optional if already there)
-cd /home/site/wwwroot/backend
+echo "Starting backend app..."
 
-# Install dependencies (optional if already installed by Azure)
+# Navigate to the backend folder in Azure
+cd /home/site/wwwroot
+echo "Current folder: $(pwd)"
+
+# Install dependencies (optional if Azure already did it)
 pip install -r requirements.txt
+echo "Dependencies installed"
 
-# Start FastAPI using Gunicorn + Uvicorn worker
-# main:app -> main.py file with FastAPI instance named app
+# Start FastAPI with Gunicorn + Uvicorn worker
 gunicorn -w 4 -k uvicorn.workers.UvicornWorker main:app --bind 0.0.0.0:$PORT
