@@ -1,9 +1,8 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from datetime import datetime
 
 app = FastAPI()
-
-# Permite cereri de la frontend (React, Angular etc.)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -13,4 +12,8 @@ app.add_middleware(
 
 @app.get("/api/data")
 def get_data():
-    return {"message":"Have   a nice day!"}
+    now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    return {
+        "message": "Have a wonderful and productive day! 🌞",
+        "current_time": now
+    }
