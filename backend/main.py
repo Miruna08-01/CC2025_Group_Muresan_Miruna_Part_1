@@ -14,6 +14,6 @@ app.add_middleware(
 def get_data():
     now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     return {
-        "message": "Have a wonderful and productive day! 🌞",
+        "message": "Have a wonderful and productive day!",
         "current_time": now
     }
